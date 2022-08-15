@@ -1,0 +1,37 @@
+body{
+    margin: 20px;
+    padding: 0;
+    background: #333;
+}
+.container{
+    max-width: 650px;
+   margin: auto;
+   border: 3px solid #fff;
+   background: url('./images/back.jpg') no-repeat center center/cover;
+}
+
+.container .main-img{
+    height: 400px;
+}
+.container .main-img img, .img-container img{
+    width: 100%;
+
+}
+.container .main-img img{height: 100%;}
+.container .img-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.3rem;
+}
+
+.fade-in{
+     opacity: 0;
+     animation: fadeIn  1.5s ease-in-out 1.5 forwards;
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
